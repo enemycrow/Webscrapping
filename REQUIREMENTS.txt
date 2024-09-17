@@ -1,0 +1,4 @@
+beautifulsoup4 # Necesario para BeautifulSoup que se utiliza para analizar el HTML de la página web.
+requests # Utilizado para realizar solicitudes HTTP para obtener el contenido de la página.
+pandas # Se usa para crear y manipular el DataFrame donde se almacenan los datos de la tabla.
+tk # Este paquete generalmente viene con la instalación estándar de Python, pero se incluye aquí para indicar que se necesita soporte para interfaces gráficas de usuario (GUI).
