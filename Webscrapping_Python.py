@@ -80,5 +80,3 @@ scrape_button.pack(pady=20)
 
 # Iniciar el bucle principal de la interfaz gráfica
 root.mainloop()
-
-print(f"Archivo guardado en: {file_path}")
