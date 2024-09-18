@@ -16,7 +16,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia el script al contenedor
-COPY Webscrapping\ Python.py .
+COPY Webscrapping_Python.py .
 
 # Define el comando predeterminado para ejecutar el script
-CMD ["python", "Webscrapping Python.py"]
+CMD ["python", "Webscrapping_Python.py"]

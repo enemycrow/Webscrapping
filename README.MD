@@ -15,6 +15,27 @@ Puedes instalar los paquetes necesarios con el siguiente comando:
 pip install beautifulsoup4 requests pandas
 ***
 
+## Usar con Docker (Opcional)
+Si prefieres ejecutar el script en un entorno Docker para evitar la instalación manual de dependencias o problemas de compatibilidad, puedes seguir estos pasos:
+
+Requisitos
+* Docker instalado en tu sistema.
+Instrucciones
+1. Construir la Imagen de Docker: En la terminal, navega al directorio que contiene el Dockerfile y ejecuta el siguiente comando:
+***
+docker build -t web-scraper-app .
+***
+
+2. Ejecutar el Contenedor: Después de construir la imagen, puedes ejecutar el script con:
+***
+docker run --rm -it web-scraper-app
+***
+
+Esto ejecutará el script dentro de un contenedor aislado.
+
+### Notas sobre Docker y GUI
+*Dado que este script utiliza una interfaz gráfica (tkinter), la ejecución dentro de Docker puede ser más compleja si tu sistema no está configurado para permitir el acceso a la interfaz gráfica desde un contenedor Docker. Esta configuración puede variar según tu sistema operativo y requerirá pasos adicionales no cubiertos aquí.
+
 ## Descripción del Script
 1. Interfaz Gráfica: El script utiliza tkinter para crear una interfaz gráfica que permite al usuario:
 * Ingresar la URL de la página web que contiene la tabla.
